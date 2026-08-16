@@ -1,0 +1,487 @@
+/* ─── RESET & BASE ───────────────────────────────────────────── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF6F0;
+    font-family: Cormorant Garamond, sans-serif;
+}
+
+/* ─── NAVBAR ─────────────────────────────────────── */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;
+    background-color:#FAF6F0;
+}
+.navbar_brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    width: 25px;
+    height: 25px;
+}
+.Lumiere {
+    font-size: 25px;
+    font-weight: 700;
+    color: #3B2214;
+    font-family: "Playfair Display, sans-serif";
+}
+.navbar_links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+.nav-link{
+    color: #735F4D;
+    font-family: "Cormorant Garamond, sans-serif";
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-link:hover{
+   text-decoration:underline;
+}
+
+/* ─── SABLE RING DESCRIPTION ─────────────────────────────────────── */
+.page_path{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 30px 80px 0px 80px;
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.collections_path{
+    text-decoration:none;
+    color: #735F4D;
+}
+.collections_path:hover{
+   text-decoration:underline;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    padding: 0px 80px 24px 80px;
+    gap: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.product_content{
+       flex: 0 0 auto;
+    max-width: 618px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product_name{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 0px;
+}
+.product_description{
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.product_reviews{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.price_divider{
+    width: 100%;
+}
+.product_price{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 35px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.sizes{
+    color: #3B2214;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.5px;
+}
+.size_options{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 18px;
+}
+.size_option{
+    background-color: #FAF6F0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    color: #735F4D;
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.size_option:hover{
+    background: #EEE5D9;
+}
+
+/* effect when the button is clicked */
+.size_option:focus {
+      color: #FAF6F0;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+background: #3B2214;
+}
+.metal{
+        color: #3B2214;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.5px;
+}
+.metal_options{
+     display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 18px;
+}
+.metal_option{
+    background-color: #FAF6F0;
+    width: 175px;
+    height: 36px;
+    border: none;
+    padding: 10px 80px 11px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    color: #735F4D;
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.metal_option:hover{
+    background: #EEE5D9;
+}
+.metal_option:focus{
+     background-color: #3B2214;
+    width: 175px;
+    height: 36px;
+    border: none;
+    padding: 10px 80px 11px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    color: #FAF6F0;
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product_actions{
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding-bottom: 18px;
+}
+.add_to_cart{
+    background: #7F1928;
+    display: inline-flex;
+    border: none;
+height: 56px;
+padding: 0 87px;
+justify-content: center;
+align-items: center;
+color: #FAF6F0;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 2px;
+}
+.add_to_cart:hover{
+    background: #53131C;
+}
+.add_to_wishlist{
+    background: #EEE5D9;
+    border: none;
+    display: inline-flex;
+height: 56px;
+padding: 0 30.5px;
+justify-content: center;
+align-items: center;
+color: #3B2214;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 2px;
+}
+.add_to_wishlist:hover{
+    background: #E4D9CB;
+}
+
+.product_details{
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.product_details p{
+    margin-bottom: 9px;
+}
+
+.main_image{
+    width: 500px;
+height: 460px;
+aspect-ratio: 29/26;
+padding-bottom: 5px;
+}
+.thumbnail_images{
+      display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.thumbnail_image{
+    width: 114.5px;
+height: 88.5px;
+aspect-ratio: 63/50;
+}
+
+/* ABOUT PIECE */
+.piece_details{
+    display:flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+    padding: 50px 80px;
+    background: #EEE5D9;
+}
+.about_this_piece_title{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 18px;
+}
+.piece_description{
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: 30px;
+max-width: 450px;
+}
+.piece_description p{
+    margin-bottom: 15px;
+}
+.specifications{
+    align-items: center;
+    padding-left: 0;
+}
+.specification_title{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 15px;
+}
+.title{
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+padding: 8px 40px 8px 0px;
+min-width: 120px;
+}
+.desc{
+    color: #3B2214;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.title{
+    border-bottom: 1px solid #D6C8B6;
+}
+.desc{
+    border-bottom: 1px solid #D6C8B6;
+}
+
+/* RELATED PRODUCTS */
+.related_products{
+    padding: 40px 80px 65px 80px;
+}
+.related_products_title{
+    display:flex;
+    justify-content: center;
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 20px;
+}
+.related_product_cards{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+}
+.related_product_image{
+    width: 240px;
+height: 180px;
+aspect-ratio: 9/7;
+}
+.related_product_card{
+    background: #EEE5D9;
+    padding: 15px 15px 30px 15px;
+}
+.related_product_card:hover{
+   background: #E9DDCC;
+}
+.related_product_name{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 15px 0px 7px 0px;
+}
+.related_product_price{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+/* FOOTER */
+.footer{
+    background: #3B2214; 
+}
+.footer_columns{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 30px 80px;
+    gap: 40px;
+    justify-content: space-between;
+}
+.footer_brand_name{
+    color: #FAF6F0;
+font-family: "Playfair Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2px;
+}
+.footer_description{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+padding-top: 8px;
+}
+.footer_heading{
+    color: #FAF6F0;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.5px;
+padding-bottom: 10px;
+}
+.footer_desc{
+    color: #D6C8B6;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+padding-bottom: 10px;
+}
+.footer_desc li{
+    padding-bottom: 10px;
+}
+.footer_divider{
+    padding:0px 0px;
+    width: 100%;
+}
+.footer_bottom{
+    padding: 20px 80px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+.copyright{
+ color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 11px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;   
+}
+.course_name{
+    color: #735F4D;
+text-align: right;
+font-family: "Cormorant Garamond";
+font-size: 11px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}

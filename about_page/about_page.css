@@ -1,0 +1,313 @@
+/* ─── RESET & BASE ───────────────────────────────────────────── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+   background-color: #FAF6F0;
+    font-family: Cormorant Garamond, sans-serif;
+
+}
+
+/* ─── NAVBAR ─────────────────────────────────────── */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;
+    background-color:#FAF6F0;
+}
+.navbar_brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    width: 25px;
+    height: 25px;
+}
+.Lumiere {
+    font-size: 25px;
+    font-weight: 700;
+    color: #3B2214;
+    font-family: "Playfair Display, sans-serif";
+}
+.navbar_links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+.nav-link{
+    color: #735F4D;
+    font-family: "Cormorant Garamond, sans-serif";
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-link:hover{
+   text-decoration:underline;
+}
+
+/* HERO */
+
+.hero {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 25px 0px;
+    align-items: center;
+    gap: 40px;
+    border:#C09B61;
+}
+.content{
+   padding: 10px 0px;
+}
+.line{
+    flex-shrink: 0;
+}
+.small {
+color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 4px;
+}
+
+.hero h1 {
+
+    font-size: 55px;
+    margin-top: 10px;
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 76px; /* 111.765% */
+
+}
+.line{
+    padding-right: 80px;
+}
+.vertical_line{
+  width: 6px; /* This becomes the height when rotated */
+  height: 190px;
+  
+}
+
+/* ABOUT */
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    padding: 20px 80px;
+    align-items: center;
+}
+
+.about-image img {
+   max-width: 500px;
+   width: 100%;
+   height: auto;
+   aspect-ratio: 187/140;
+}
+
+.about-text-card {
+   color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 17px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; /* 164.706% */
+}
+.about-text-card h2{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 20px;
+}
+.about-text-card p{
+    padding-bottom: 20px;
+}
+
+
+/* VALUES */
+
+.card-value{
+    background: #FAF6F0;
+    padding: 20px 20px 40px 20px;
+    border-left: 5px solid #7F1928;
+}
+.card-value h3{
+    padding-bottom: 10px;
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.card-value p{
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.values-section {
+    margin-top: 30px;
+    padding: 50px 80px;
+    background: #EEE5D9;
+}
+.values-section h2{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 10px;
+}
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* TEAM */
+.team-section {
+    padding: 60px 80px;
+}
+.team-section h2{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 20px;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+.card-member{
+    background: #EEE5D9;
+}
+.card-member:hover{
+    background: #E5DACB;
+}
+.card-member img {
+    width: 100%;
+}
+.card-member h3 {
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 20px 0px 5px 20px;
+}
+.card-member p{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+padding: 5px 0px 30px 20px;
+}
+.linking{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* FOOTER */
+.footer{
+    background: #3B2214; 
+}
+.footer_columns{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 30px 80px;
+    gap: 40px;
+    justify-content: space-between;
+}
+.footer_brand_name{
+    color: #FAF6F0;
+font-family: "Playfair Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2px;
+}
+.footer_description{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+padding-top: 8px;
+}
+.footer_heading{
+    color: #FAF6F0;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.5px;
+padding-bottom: 10px;
+}
+.footer_desc{
+    color: #D6C8B6;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+padding-bottom: 10px;
+}
+.footer_desc li{
+    padding-bottom: 10px;
+}
+.footer_divider{
+    padding:0px 0px;
+    width: 100%;
+}
+.footer_bottom{
+    padding: 20px 80px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+.copyright{
+ color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 11px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;   
+}
+.course_name{
+    color: #735F4D;
+text-align: right;
+font-family: "Cormorant Garamond";
+font-size: 11px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}

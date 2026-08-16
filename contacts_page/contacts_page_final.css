@@ -1,0 +1,441 @@
+/* ─── RESET & BASE ───────────────────────────────────────────── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF6F0;
+    font-family: Cormorant Garamond, sans-serif;
+}
+
+/* ─── NAVBAR ─────────────────────────────────────── */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;
+    background-color:#FAF6F0;
+}
+.navbar_brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    width: 25px;
+    height: 25px;
+}
+.Lumiere {
+    font-size: 25px;
+    font-weight: 700;
+    color: #3B2214;
+    font-family: "Playfair Display, sans-serif";
+}
+.navbar_links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+.nav-link{
+    color: #735F4D;
+    font-family: "Cormorant Garamond, sans-serif";
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-link:hover{
+   text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    background:#3B2214;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 80px;
+}
+.hero p{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 4px;
+}
+.hero h1{
+    color: #FAF6F0;
+font-family: "Playfair Display";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.line{
+    display: none;
+}
+.content{
+    padding: 0;
+}
+
+
+/* CONTACT */
+.contact{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 80px 80px;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+/* CONTACT LEFT */
+.left{
+    background: #EEE5D9;
+    padding: 51px 24px 80px 24px;
+    border-left: 5px solid #7F1928;
+    flex-shrink: 0;
+    width: 300px;
+}
+.left h3{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 40px;
+}
+.title{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.5px;
+padding-bottom: 20px;
+margin-top: 20px;
+}
+.desc{
+    color: #3B2214;
+font-family: "Cormorant Garamond";
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px;
+padding-bottom: 10px;
+}
+.divider{
+    width: 100%;
+}
+.follow{
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+}
+.socials_icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+/* CONTACT RIGHT */
+.right{
+    flex: 1;
+    min-width: 0;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.right h2{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 20px;
+}
+.col_title{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.5px;
+padding-bottom: 10px;
+}
+form input,
+form select,
+form textarea {
+    padding: 14px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+    border: none;
+    margin-bottom: 22px;
+}
+.row .col,
+.row .third_col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+.row input{
+    width: 100%;
+    color: #D6C8B6;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.second_col label{
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.second_row{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+.row select{
+    width: 100%;
+        color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.row option{
+    color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.third_col{
+    margin-top: 10px;
+}
+textarea {
+  width: 100%;
+  max-width: 660px;
+  height: 150px;
+  resize: none;
+  color: #D6C8B6;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+input[type="file"]::file-selector-button {
+  background-color: #D6C8B6;
+  color: white;
+font-family: "Cormorant Garamond";
+font-size: 10px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+  padding: 4px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-right: 20px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #735F4D;
+}
+
+.buttons{
+    margin-top: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.send_message button{
+height: 52px;
+padding: 18px 53px;
+justify-content: center;
+align-items: center;
+background: #7F1928;
+border: none;
+color: #FAF6F0;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 2px;
+}
+.send_message button:hover{
+    background: #53131C
+}
+.reset button{
+    display: flex;
+width: 152px;
+height: 52px;
+padding: 18px 53px;
+justify-content: center;
+align-items: center;
+background: #EEE5D9;
+color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 2px;
+border: none;
+}
+.reset button:hover{
+    background: #E4D9CB
+}
+
+/* APPOINTMENT SECTION */
+.appointment{
+    padding: 60px 80px;
+    background: #EEE5D9;
+}
+.appointment h2{
+    color: #3B2214;
+font-family: "Playfair Display";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appointment p{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+}
+.appointment button{
+height: 52px;
+padding: 18px 64px;
+background: #7F1928;
+color: #FAF6F0;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 2px;
+border: none;
+}
+.booking_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.appointment button:hover{
+    background: #53131C;
+}
+
+/* FOOTER */
+.footer{
+    background: #3B2214; 
+}
+.footer_columns{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 30px 80px;
+    gap: 40px;
+    justify-content: space-between;
+}
+.footer_brand_name{
+    color: #FAF6F0;
+font-family: "Playfair Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2px;
+}
+.footer_description{
+    color: #C09B61;
+font-family: "Cormorant Garamond";
+font-size: 14px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+padding-top: 8px;
+}
+.footer_heading{
+    color: #FAF6F0;
+font-family: "Cormorant Garamond";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.5px;
+padding-bottom: 10px;
+}
+.footer_desc{
+    color: #D6C8B6;
+font-family: "Cormorant Garamond";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+padding-bottom: 10px;
+}
+.footer_desc li{
+    padding-bottom: 10px;
+}
+.footer_divider{
+    padding:0px 0px;
+    width: 100%;
+}
+.footer_bottom{
+    padding: 20px 80px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+.copyright{
+ color: #735F4D;
+font-family: "Cormorant Garamond";
+font-size: 11px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;   
+}
+.course_name{
+    color: #735F4D;
+text-align: right;
+font-family: "Cormorant Garamond";
+font-size: 11px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
